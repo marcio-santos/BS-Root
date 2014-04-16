@@ -197,7 +197,7 @@ if ($confirma) {
  
  
 
-$query = "REPLACE INTO PagSeguroTransacoes (id,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,Anotacao,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,Data) VALUES (NULL,'$Referencia','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras','$Anotacao', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens',
+$query = "REPLACE INTO PagSeguroTransacoes (id,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,Data) VALUES (NULL,'$Referencia','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens',
 '$ProdID','$ProdDescricao','$ProdValor','$Parcelas',now())" ;
 
     

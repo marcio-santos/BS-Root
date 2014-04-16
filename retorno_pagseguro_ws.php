@@ -180,7 +180,7 @@
 
             $volta = explode(";",$_POST['Referencia']);
 
-            //Caso seja compra corporativa, o trailer será retornado na 4 posiçào do array
+            //Caso seja compra corporativa, o trailer serï¿½ retornado na 4 posiï¿½ï¿½o do array
 
 
 
@@ -216,9 +216,9 @@
             $Trailer = $volta[3];
 
             if($StatusTransacao == 'Aprovado' ) {
-                $query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,Anotacao,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data,DataGeracao) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras','$Anotacao', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens','$ProdID','$ProdDescricao','$ProdValor','$Parcelas','$PromoID','$Trailer',now(),now())" ;
+                $query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data,DataGeracao) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens','$ProdID','$ProdDescricao','$ProdValor','$Parcelas','$PromoID','$Trailer',now(),now())" ;
             } else {
-                $query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,Anotacao,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras','$Anotacao', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens','$ProdID','$ProdDescricao','$ProdValor','$Parcelas','$PromoID','$Trailer',now())" ;
+                $query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens','$ProdID','$ProdDescricao','$ProdValor','$Parcelas','$PromoID','$Trailer',now())" ;
 
             }
 

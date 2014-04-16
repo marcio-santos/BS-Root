@@ -216,7 +216,7 @@ if ($confirma) {
  $Trailer = $volta[3];
  
 
-$query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,Anotacao,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras','$Anotacao', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens',
+$query = "REPLACE INTO PagSeguroTransacoes (id,userid,IdCliente,TransacaoID,VendedorEmail,Referencia,TipoFrete,ValorFrete,Extras,TipoPagamento,StatusTransacao,CliNome,CliEmail,CliEndereco,CliNumero,CliComplemento,CliBairro,CliCidade,CliEstado,CliCEP,CliTelefone,NumItens,ProdID,ProdDescricao,ProdValor,Parcelas,PromoID,Trailer,Data) VALUES (NULL,'$userid','$IdCliente','$TransacaoID','$VendedorEmail','$Referencia','$TipoFrete','$ValorFrete','$Extras', '$TipoPagamento','$StatusTransacao','$CliNome','$CliEmail','$CliEndereco','$CliNumero','$CliComplemento','$CliBairro','$CliCidade','$CliEstado','$CliCEP','$CliTelefone','$NumItens',
 '$ProdID','$ProdDescricao','$ProdValor','$Parcelas','$PromoID','$Trailer',now())" ;
 
     
